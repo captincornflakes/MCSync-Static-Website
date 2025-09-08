@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api
+Disallow: /assets
+Disallow: /admin
+
+Sitemap: https://mcsync.live/api/sitemap.xml

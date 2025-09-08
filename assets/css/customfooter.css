@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    width: auto;
+    height: 250px;
+    background-color: var(--second-color);
+    align-items: center;
+}
+
+
+
+.foot {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    color: white;
+}

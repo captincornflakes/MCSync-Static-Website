@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MCSync || Subscriber Syncing</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="./assets/vendor/fontawesome-free-6.6.0-web/css/all.css" rel="stylesheet" />
+	<link href="./assets/vendor/fontawesome-free-6.6.0-web/css/v4-shims.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/mcsync.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+	<h1 class="logo">MCSync</h1>
+	<nav>
+		<ul class="nav-area top-nav">
+			<li><a href="#top">Home</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#commands">Commands</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#support">Support</a></li>
+			<li><a href="https://docs.mcsync.live">Docs</a></li>
+			<li><a href="#download">Download</a></li>
+		</ul>
+	</nav>
+	<a href="https://discord.com/oauth2/authorize?client_id=1274892468135137373&permissions=8&integration_type=0&scope=bot"  target="_blank" class="btn-area">Invite Bot</a>
+</header>
+
+<!-- Home Section -->
+<div class="wrapper">
+	<div class="home" id="home">
+		<div class="home-text">
+			<h1 id="botname">MCSync</h1>
+			<h3 style="margin-left: 0;">Twitch Subscribers <i class="fa-solid fa-arrow-right fa-2xs" style="color: #B197FC;"></i> Minecraft Server</h3>
+			<p class="bot-description">Looking to make it so your Twitch subscribers get automatic access to your Minecraft server?
+			You've come to the right place, add our bot, plugin, and you're off!</p>
+			<a href="https://discord.com/oauth2/authorize?client_id=1274892468135137373&permissions=8&integration_type=0&scope=bot" target="_blank"><button class="home-btn">Add to discord</button></a>
+		</div>
+		<div class="home-img">
+			<img src="./assets/images/LogoTransparentIcon.png" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- Features Section -->
+<div class="features">
+	<div class="curve">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1" id="features"
+				d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper reveal">
+		<div class="title">
+			<div class="th1">
+				<h1>What we Provide</h1>
+			</div>
+			<center>
+				<div class="thr">
+					<hr>
+				</div>
+			</center>
+		</div>
+		<!-- feature start -->
+		<div class="features-grid">
+			<div class="feature feature1">
+				<i class="fas fa-refresh"></i>
+				<h4>Twitch Syncing</h4>
+				<p>Seemless syncing of your Twitch subscribers to the Minecraft whitelist utilizing Discord's Twitch Integration roles.</p>
+			</div>
+			<!-- feature end -->
+			<!-- feature start -->
+			<div class="feature feature2">
+				<i class="fas fa-users"></i>
+				<h4>Influx Ready</h4>
+				<p>Ready to launch your server? We're ready too!
+				Services standing by to capture the influx of users to
+				the Database.</p>
+			</div>
+			<!-- feature end -->
+			<!-- feature start -->
+			<div class="feature feature3">
+				<i class="fas fa-database"></i>
+				<h4>Uptime & Updates</h4>
+				<p>Near 100% Uptime with nightly reboots.
+				The majority of our updates are pushed directly to the bot, which means less downloading on your end!</p>
+			</div>
+			<!-- feature end -->
+		</div>
+	</div>
+	<div class="curved">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1" id="commands"
+				d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+			</path>
+		</svg>
+	</div>
+</div>
+
+<!-- Commands Section -->
+<div class="wrapper reveal">
+	<div class="title">
+		<div class="th1">
+			<h1>All Commands</h1>
+		</div>
+		<center>
+			<div class="thr">
+				<hr>
+			</div>
+		</center>
+	</div>
+	<!-- Command Category -->
+	<nav>
+		<div class="categorys">
+			<span class="category active" data-name="all">All</span>
+			<span class="category" data-name="moderator">Admin</span>
+			<span class="category" data-name="utility">User</span>
+		</div>
+	</nav>
+	<!-- Commands -->
+	<div class="commands">
+		<!-- Command Start -->
+		<div class="command" data-name="moderator">
+			<h2>/setup</h2><span>
+				<div class="cmdinfo">
+					<p>Initializes the discord bot on your server. Use this right after adding the bot, as it will walk you through setup</p>
+				</div>
+				<div class="cmdali">
+					<p>Aliases: N/A</p>
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+		<!-- Command Start -->
+		<div class="command" data-name="moderator">
+			<h2>/token</h2><span>
+				<div class="cmdinfo">
+				</div>
+				<div class="cmdali">
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+		<!-- Command Start -->
+		<div class="command" data-name="moderator">
+			<h2>/generatetoken</h2><span>
+				<div class="cmdinfo">
+				</div>
+				<div class="cmdali">
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+		<!-- Command Start -->
+		<div class="command" data-name="moderator">
+			<h2>/roles</h2><span>
+				<div class="cmdinfo">
+				</div>
+				<div class="cmdali">
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+		<!-- Command Start -->
+		<div class="command" data-name="moderator">
+			<h2>/deletebot</h2><span>
+				<div class="cmdinfo">
+				</div>
+				<div class="cmdali">
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+		<!-- Command Start -->
+		<div class="command" data-name="utility">
+			<h2>/mcsync (arg)</h2><span>
+				<div class="cmdinfo">
+				</div>
+				<div class="cmdali">
+				</div>
+			</span>
+		</div>
+		<!-- Command End -->
+	</div>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq">
+	<div class="curve">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1" id="faq"
+				d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper reveal">
+		<main id="questions" role="main">
+			<div class="title">
+				<div class="th1">
+					<h1>Frequently Asked Questions</h1>
+				</div>
+				<center>
+					<div class="thr">
+					</div>
+				</center>
+			</div>
+			<input type="text" class="live-search-box" placeholder="Search an Answer..." />
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+					<h2 class="question">1. Can I let my friend on my server without them being subscribed to me?</h2>
+					<span class="faq-t"></span>
+				</div>
+				<p class="answer"> Of course you can! It would be totally boring playing alone and obsurd to force your friends to give you money! 
+					You can give them the permission `mcs.bypass` or add them to the vanilla whitelist. 
+					Just don't enable the vanilla whitelist!</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+					<h2 class="question">2. How many servers can I have with the Free Version?
+					</h2><span class="faq-t"></span>
+				</div>
+				<p class="answer"> By default, Free accounts will have access to create 1 server / API token. 
+				Premium users have the ability to create as many server API tokens as they please.</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+					<h2 class="question">3. How much is Premium?
+					</h2><span class="faq-t"></span>
+				</div>
+				<p class="answer"> Premium is $4.99/month. We truely appriciate your consideration for premium!</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+					<h2 class="question">4. What benefits does Premium have to offer?
+					</h2><span class="faq-t"></span>
+				</div>
+				<p class="answer"> We're... working on that..</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+				</div>
+				<p class="answer"> We are working on developing a Forge compatable plugin. 
+				Spigot plugins do run on Paper however not on Sponge. 
+				We work hard to develop addons for the most commonly used Minecraft servers.</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+				</div>
+				<p class="answer"> MCSync supports most all versions of Minecraft including the most recent
+				1.21.1 update. Unless the core code of Minecraft changes, our plugin typically doesn't need an update.</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+				</div>
+				<p class="answer"> Yes! If you need help setting up MCSync on your Minecraft Server, or your Discord
+				Server, please don't hesitate to join our support server and submit a ticket, or ask the community.</p>
+			</div>
+			<!-- question end -->
+			<!-- question start -->
+			<div class="topic">
+				<div class="open">
+				</div>
+				<p class="answer">Our Discord bot listens for any role updates on users, when a user registers their Minecraft Java
+				username to their Discord ID their information gets added to MCSync's database. Once that user attempts to join your server
+				at that point their information is checked. There's no delay. As soon as a users links their Minecraft to their Discord, they
+				can join the server.</p>
+			</div>
+			<!-- question end -->
+		</main>
+	</div>
+	<div class="curve">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1"
+				d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+			</path>
+		</svg>
+	</div>
+</div>
+
+<!-- Support Section -->
+<div id="support"></div>
+<div class="wrapper reveal">
+	<div class="title">
+		<div class="th1">
+			<h1>Support Server</h1>
+		</div>
+		<center>
+			<div class="thr">
+				<hr>
+			</div>
+		</center>
+	</div>
+	<!-- replace with your server widget and make the width 100% -->
+	<iframe src="https://discord.com/widget?id=932082063367077908&theme=dark" width="100%" height="600" 
+		allowtransparency="true" frameborder="0"
+		sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
+
+<!-- Download Section (static, no PHP logic for file listing) -->
+<div class="features" id="download">
+	<div class="curve">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1" id="faq"
+				d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper reveal">
+		<div class="title">
+			<div class="th1">
+				<h1>Available JAR Files</h1>
+			</div>
+		</div>
+		<center>
+			<!-- Static table or message, since PHP logic is removed -->
+			<div class="alert alert-warning" role="alert">JAR file listing is not available in static HTML. Please check the release directory manually.</div>
+		</center>
+	</div>
+	<div class="curve">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill-opacity="1"
+				d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+			</path>
+		</svg>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer>
+	<div class="wrapper">
+		<div class="foot">
+			<h1>MCSync</h1>
+			<nav>
+				<ul class="nav-area bottom-nav">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#commands">Commands</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#support">Support</a></li>
+				</ul>
+			</nav>
+			<h4>Copyright © 2021 - 2025. All rights reserved by <a href="../">MCSync</a>.</h4>
+			<h4>Not affiliated with <a href="https://twitch.tv/" target="_blank">Twitch.tv</a>, 
+			<a href="https://mojang.com/" target="_blank">Mojang Studios</a> or 
+			<a href="https://discord.com" target="_blank">Discord</a></h4>
+		</div>
+	</div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/commands.js"></script>
+<script src="./assets/vendor/fontawesome-free-6.6.0-web/js/v4-shims.js"></script>
+<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</body>
+</html>
