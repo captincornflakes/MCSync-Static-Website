@@ -1,0 +1,2 @@
+# MCSync Static-Website
+
