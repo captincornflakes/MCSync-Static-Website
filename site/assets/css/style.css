@@ -328,6 +328,16 @@ header {
     border: 2px solid #9c42ca;
 }
 
+.feature4 i,
+.feature4 h4,
+.feature4 .cta {
+    color: #20c20e;
+}
+
+.feature4:hover {
+    border: 2px solid #20c20e;
+}
+
 .feature .cta span {
     font-size: 0.6rem;
 }
