@@ -23,6 +23,18 @@
 			line-height: 1.7;
 		}
 
+		.legal-wrapper,
+		.legal-wrapper h1,
+		.legal-wrapper h2,
+		.legal-wrapper h3,
+		.legal-wrapper p,
+		.legal-wrapper li,
+		.legal-wrapper a {
+			font-family: 'Poppins', sans-serif;
+			text-transform: none;
+			letter-spacing: normal;
+		}
+
 		.legal-hero {
 			background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
 			border: 1px solid var(--legal-border);
@@ -53,11 +65,14 @@
 		.legal-section h2 {
 			margin: 0 0 8px;
 			font-size: 1.5rem;
+			font-weight: 600;
+			color: var(--legal-text);
 		}
 
 		.legal-section > p {
 			margin-top: 0;
 			color: var(--legal-muted);
+			font-size: 0.98rem;
 		}
 
 		.legal-nav {
@@ -92,18 +107,43 @@
 
 		.subsection h3 {
 			margin: 0 0 8px;
-			font-size: 1rem;
+			font-size: 1.02rem;
+			font-weight: 600;
 			letter-spacing: 0.2px;
+			color: var(--legal-text);
 		}
 
 		.subsection p,
 		.subsection li {
 			margin: 0 0 8px;
+			font-size: 0.98rem;
+			font-weight: 400;
+			color: var(--legal-muted);
 		}
 
 		.subsection ul {
 			margin: 0;
 			padding-left: 18px;
+		}
+
+		.subsection strong {
+			color: var(--legal-text);
+			font-weight: 600;
+		}
+
+		.legal-wrapper a {
+			font-weight: 500;
+		}
+
+		.legal-inline-link {
+			color: var(--legal-text);
+			text-decoration: underline;
+		}
+
+		.legal-contact {
+			margin-top: 12px;
+			font-size: 0.95rem;
+			color: var(--legal-muted);
 		}
 
 		.back-top {
@@ -230,12 +270,37 @@
 		</div>
 
 		<div class="subsection">
-			<h3>4. Your Choices</h3>
+			<h3>4. GDPR and International Privacy Rights</h3>
+			<p>If you are located in the European Economic Area, United Kingdom, or another jurisdiction with similar privacy laws, you may have rights to access, correct, delete, restrict, or object to certain processing of your personal data, and to request data portability where applicable. MCSync processes account and server data only where there is a valid legal basis, including service performance, legitimate interests in operating and securing the service, legal obligations, or your consent where required by law.</p>
+		</div>
+
+		<div class="subsection">
+			<h3>5. Cookies and Trackers</h3>
+			<p>The public MCSync website is a static site and does not currently use advertising cookies or third-party analytics trackers to profile visitors. Basic technical logs may still be created by hosting or infrastructure providers for security, delivery, and abuse prevention. If cookies, local storage, analytics, or similar tracking technologies are added in the future, this policy will be updated to describe what is used, why it is used, and any choices available to you.</p>
+		</div>
+
+		<div class="subsection">
+			<h3>6. California Privacy Rights and Opt-Out</h3>
+			<p>If you are a California resident, you may have rights under the CCPA or CPRA to know what personal information is collected, request deletion, request correction, and receive information about data categories, sources, purposes, and disclosures, subject to applicable exceptions. MCSync does not sell personal information and does not share personal information for cross-context behavioral advertising as part of normal service operation. If that changes, MCSync will provide any required notice and opt-out mechanism.</p>
+		</div>
+
+		<div class="subsection">
+			<h3>7. Your Choices</h3>
 			<ul>
 				<li>You can stop using MCSync by removing the bot from your Discord server.</li>
 				<li>You can request account-data deletion through official support channels, subject to required retention obligations.</li>
+				<li>You can request access, correction, deletion, or privacy-rights information by contacting <a class="legal-inline-link" href="mailto:opt-out@mcsync.live">opt-out@mcsync.live</a>.</li>
+				<li>Where a right to opt out applies under local law, you may submit that request through the same support contact.</li>
 			</ul>
 		</div>
+
+		<div class="subsection">
+			<h3>8. Children's Privacy</h3>
+			<p>The Application is not intended for children under 16 years of age, or such higher age as required by applicable law. The Service Provider does not knowingly solicit data from children or market the Application to them.</p>
+			<p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourages parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider at <a class="legal-inline-link" href="mailto:opt-out@mcsync.live">opt-out@mcsync.live</a> so that appropriate action can be taken. If you are under 16 years of age, your parent or guardian must provide consent on your behalf where permitted by law.</p>
+		</div>
+
+		<p class="legal-contact">Privacy requests and legal notices: <a class="legal-inline-link" href="mailto:opt-out@mcsync.live">opt-out@mcsync.live</a></p>
 
 		<a class="back-top" href="#top">Back to top</a>
 	</section>
@@ -275,6 +340,11 @@
 			<p>Collected data is retained only while operationally necessary or legally required. This policy may be updated when service behavior or requirements change.</p>
 		</div>
 
+		<div class="subsection">
+			<h3>5. Data Subject Requests</h3>
+			<p>You may request access, correction, deletion, or additional information about collected data by contacting <a class="legal-inline-link" href="mailto:opt-out@mcsync.live">opt-out@mcsync.live</a>. Requests are handled subject to identity verification, operational necessity, and legal retention obligations.</p>
+		</div>
+
 		<a class="back-top" href="#top">Back to top</a>
 	</section>
 </main>
@@ -283,6 +353,7 @@
 	<div class="wrapper">
 		<div class="foot">
 			<h1>MCSync</h1>
+			<h4>By using MCSync, you agree to the <a href="./tos.html">Terms of Service</a>, <a href="./tos.html#privacy">Privacy Policy</a>, and related legal policies.</h4>
 			<h4>Copyright © 2021 - 2026. All rights reserved by <a href="./index.html">MCSync</a>.</h4>
 		</div>
 	</div>

@@ -594,6 +594,18 @@ footer {
     color: white;
 }
 
+.foot h4 {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 860px;
+}
+
+.foot h4 a {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: inherit;
+}
+
 /* footer end */
 /* @ */
 @keyframes animate {
